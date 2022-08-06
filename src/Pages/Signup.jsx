@@ -37,7 +37,7 @@ axios({
       });
 }
 const { logdata } = useSelector((state) => state.login); 
-  if(logdata.length==1){
+  if(logdata.length===1){
     return <Navigate to="/" /> 
   }
 

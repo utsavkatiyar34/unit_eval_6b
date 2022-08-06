@@ -1,7 +1,8 @@
 import React from 'react'
 import '../App.css'
 import { Navigate } from "react-router-dom";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
+import { Products } from './Products';
 
 export const Home = () => {
   const { logdata } = useSelector((state) => state.login);
@@ -10,6 +11,7 @@ export const Home = () => {
   }
   return (
     <div className='.App'>
+      <Products/>
     </div>
   )
 }

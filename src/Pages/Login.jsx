@@ -7,14 +7,18 @@ import { loginToDoError, loginToDoLoading, loginToDoSuccess } from '../Store/act
 import { Navigate, NavLink } from 'react-router-dom';
 
 export const Login = () => {
-  const [username,setUsername]=useState('');
+  const [email,setEmail]=useState('');
   const [password, setPassword]=useState('');
   const dispatch=useDispatch();
   let handleLogin=()=>{
     dispatch(loginToDoLoading());
     axios({
-          method: "get",
-          url: `http://localhost:4000/users?username=${username}&password=${password}`,
+          method: "post",
+          url: 'https://reqres.in/api/login',
+          data:{
+            email:email,
+            password:password
+          }
     }).then((res) => {
       if (res.data.length===0){
         alert("Invalid Creditionals");
@@ -27,18 +31,20 @@ export const Login = () => {
             dispatch(loginToDoError());
           });
   }
-  const { logdata } = useSelector((state) => state.login); 
-  if(logdata.length==1){
+
+  const { logdata } = useSelector((state) => state.login);
+
+  if(logdata.length>0){
     return <Navigate to="/" /> 
   }
   return (
     <div className='signUp'>
         <input
           required
-          value={username}
-          onChange={(e) => setUsername(e.target.value)}
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
           className="inpfields"
-          placeholder='Username'
+          placeholder='Enter Email'
           type="text"
         ></input>
         <input

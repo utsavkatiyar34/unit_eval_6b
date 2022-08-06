@@ -24,7 +24,7 @@ import {
         login: {
           loading: false,
           error: false,
-          status:'',
+          token:'',
           logdata: [],
         },
         signup: {
@@ -185,8 +185,8 @@ import {
                 ...state.login,
                 loading: false,
                 error: false,
-                status: action.payload.id,
-                logdata: action.payload,
+                token: action.payload.token,
+                logdata: action.payload.token,
               },
             };
           case LOGIN_TODO_ERROR:
@@ -205,7 +205,7 @@ import {
                 ...state.login,
                 loading:false,
                 error:false,
-                status:'',
+                token:'',
                 logdata:[],
               },
             };

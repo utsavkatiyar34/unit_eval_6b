@@ -3,11 +3,11 @@
         flex-direction: row;
         /* overflow-x: auto;
         overflow-y: auto; */
-        padding-left:1.5vw;
-        padding-right:1.5vw;
+        padding-left:5vw;
+        padding-right:5vw;
         max-height: 15vw;
-        border-bottom: 3px solid rgb(109, 3, 3);
-        border-top: 3px solid rgb(109, 3, 3);
+        border-bottom: 3px solid purple;
+        border-top: 3px solid purple;
         position: sticky;
         top: 0;
         z-index: 100;
@@ -24,7 +24,7 @@
 }
 .logonav-nav{
         text-decoration: none;
-        color: rgb(109, 3, 3);;
+        color: purple;
         
 }
 .logonav:hover{
@@ -73,17 +73,17 @@
  padding-left: .2vw;
  padding-right: .2vw;
  text-align: center;
- color: rgb(123, 42, 42);
+ color: purple;
  text-decoration: none;
  font-weight: 400;
 }
 .menulinks:hover{
         cursor: pointer;
-        color:rgb(109, 3, 3);;
+        color:rgb(246, 13, 246);;
         /* font-weight: bold; */
         transition: all .5s ease-in-out 0s;
 }
 .menulinks:active{
-        color:rgb(109, 3, 3);;
+        color:purple;;
         font-weight: bold;
 }       
