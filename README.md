@@ -1,5 +1,5 @@
 # Getting Started with Create React App
-<h2>Please run json server from database file first.</h2>
+<h2>Please run json server from <a href='https://ephemeral-scone-ffb68f.netlify.app/' target='blank'> database file </a>first.</h2>
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
