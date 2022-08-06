@@ -38,6 +38,7 @@ export const ProductCard = ({ id, brand, title, price, image, catagory }) => {
         show={modalShow}
         key={itemdata[0]}
         onHide={() => setModalShow(false)}
+        id={itemdata[0]}
         title={itemdata[2]}
         brand={itemdata[1]}
         price={itemdata[3]}
