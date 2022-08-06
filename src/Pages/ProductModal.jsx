@@ -1,16 +1,17 @@
-import React,{useState} from "react";
+import React from "react";
 import { Button } from "@mui/material";
 import Modal from "react-bootstrap/Modal";
 import {v4} from 'uuid';
 import axios from "axios";
 export default function ProductModal(props) {
-  const [cart,setCart] = useState(false);
+  // const [cart,setCart] = useState(false);
   let handleAddtoCart=()=>{
     axios({
       method: "post",
       url: "http://localhost:8080/cart",
       data:{
       id:v4(),
+      title:props.title,
       image:props.image,
       quantity:1,
       price:props.price,
@@ -19,7 +20,7 @@ export default function ProductModal(props) {
     })
       .then((res) => {
         if(res.status===201){
-         setCart(true);
+        //  setCart(true);
         }
       })
       .catch((err) => console.log(err));

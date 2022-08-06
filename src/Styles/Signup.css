@@ -5,13 +5,13 @@
         flex-direction: column;
         margin-left: auto;
         margin-right: auto;
-        border:3px solid rgb(109, 3, 3);
+        border:3px solid purple;
         padding:2.5vw;
         margin-top: 1vw;
         
 }
 .sidebar>h3{
-        color:rgb(109, 3, 3);
+        color:purple;
         font-family: Arial, sans-serif;
         font-size: 1.5vw;
 }
@@ -19,7 +19,7 @@
         height: 2vw;
         width:80%;
         margin-right: 1vw;
-        border: 1px solid #900C3F;
+        border: 1px solid purple;
         font-family:Arial, sans-serif;
         font-size: .9vw;
         margin-bottom: .5vw;
@@ -27,5 +27,5 @@
         margin-right: auto;
 }
     .inpfields:focus{
-        outline: 1px solid #900C3F;
+        outline: 1px solid purple;
     }

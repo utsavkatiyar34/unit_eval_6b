@@ -4,7 +4,7 @@ import { Button } from '@mui/material';
 import axios from 'axios';
 import { useDispatch,useSelector } from 'react-redux';
 import { loginToDoError, loginToDoLoading, loginToDoSuccess } from '../Store/actions';
-import { Navigate, NavLink } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 export const Login = () => {
   const [email,setEmail]=useState('');
@@ -60,15 +60,15 @@ export const Login = () => {
          onClick={handleLogin}
           sx={{
             color: "white",
-            backgroundColor: "#900C3F",
+            backgroundColor: "purple",
             width:'30%',
-            borderColor: "#900C3F",
+            borderColor: "purple",
             height:"3vw",
             marginLeft:'auto',
             marginRight:'auto',
-            "&:hover": { backgroundColor: "#a0522d" },
+            "&:hover": { backgroundColor: "purple" },
           }}>Login</Button>
-          <NavLink to="/signup">Not Registered?<br></br> SignUp</NavLink>
+          {/* <NavLink to="/signup">Not Registered?<br></br> SignUp</NavLink> */}
      </div>
   )
 }

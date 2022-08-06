@@ -8,9 +8,7 @@
         max-height: 15vw;
         border-bottom: 3px solid purple;
         border-top: 3px solid purple;
-        position: sticky;
-        top: 0;
-        z-index: 100;
+        
         background-color: white;
 }
 .logonav{
