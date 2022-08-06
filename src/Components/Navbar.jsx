@@ -1,6 +1,6 @@
 import React from 'react'
 import "../Styles/Navbar.css";
-import{Navigate, NavLink}from "react-router-dom";
+import{NavLink}from "react-router-dom";
 import { Button } from "@mui/material";
 import { useDispatch, useSelector } from "react-redux";
 import { logOut } from '../Store/actions';
@@ -19,6 +19,7 @@ export const Navbar = () => {
         {token ? (
           <ul>
             <NavLink to="/" className="menulinks">
+            <NavLink to="/cart" style={{color:'white',textDecoration:'none'}}>
             <Button
           varient="solid"
           sx={{
@@ -30,9 +31,10 @@ export const Navbar = () => {
             marginRight:'1vw',
             "&:hover": { backgroundColor: "purple", color: "white" },
           }}
-          onClick={()=>{<Navigate to='/cart'/>}}>
+          >
             Cart
           </Button>
+          </NavLink>
             <Button
           varient="solid"
           sx={{
